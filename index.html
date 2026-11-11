@@ -6,48 +6,87 @@
     <title>Privacy Policy - Lander Studio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333333;
-            max-width: 800px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.65;
+            color: #2d3748;
+            max-width: 840px;
             margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
+            padding: 24px 16px;
+            background-color: #f7fafc;
         }
         .container {
             background-color: #ffffff;
             padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+        }
+        .lang-nav {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 24px;
+            padding: 12px 16px;
+            background-color: #edf2f7;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .lang-nav a {
+            color: #4f46e5;
+            text-decoration: none;
+        }
+        .lang-nav a:hover {
+            text-decoration: underline;
         }
         h1 {
-            color: #2c3e50;
-            border-bottom: 2px solid #ecf0f1;
-            padding-bottom: 10px;
-            font-size: 28px;
+            color: #1a202c;
+            border-bottom: 2px solid #edf2f7;
+            padding-bottom: 12px;
+            font-size: 26px;
+            margin-top: 0;
         }
         h2 {
-            color: #2980b9;
-            margin-top: 30px;
-            font-size: 20px;
+            color: #4f46e5;
+            margin-top: 28px;
+            font-size: 18px;
         }
-        .lang-switch {
-            background-color: #e8f4fd;
-            padding: 15px;
-            border-left: 4px solid #2980b9;
-            margin-bottom: 30px;
-            font-style: italic;
+        .badge {
+            display: inline-block;
+            background-color: #e0e7ff;
+            color: #4338ca;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        ul {
+            padding-left: 22px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        strong {
+            color: #1a202c;
         }
         .divider {
             height: 2px;
-            background-color: #bdc3c7;
-            margin: 50px 0;
+            background-color: #e2e8f0;
+            margin: 48px 0;
         }
-        ul {
-            padding-left: 20px;
+        .highlight-box {
+            background-color: #f8fafc;
+            border-left: 4px solid #06b6d4;
+            padding: 14px 18px;
+            border-radius: 0 8px 8px 0;
+            margin: 16px 0;
+            font-size: 14px;
         }
-        li {
-            margin-bottom: 8px;
+        footer {
+            margin-top: 32px;
+            text-align: center;
+            font-size: 13px;
+            color: #718096;
         }
     </style>
 </head>
@@ -55,68 +94,108 @@
 
 <div class="container">
 
+    <div class="lang-nav">
+        <span>🌐 Switch Language:</span>
+        <a href="#english">English</a> | 
+        <a href="#vietnamese">Tiếng Việt</a>
+    </div>
 
     <!-- ==================== ENGLISH VERSION ==================== -->
-    <h1>Privacy Policy for Lander Studio</h1>
-    <p><strong>Last updated:</strong> June 2026</p>
+    <div id="english">
+        <span class="badge">English Version</span>
+        <h1>Privacy Policy for Lander Studio</h1>
+        <p><strong>Last updated:</strong> June 2026</p>
 
-    <h2>1. Introduction</h2>
-    <p>Welcome to Lander Studio ("we," "our," or "us"). We respect your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application.</p>
+        <h2>1. Introduction</h2>
+        <p>Welcome to Lander Studio ("we," "our," or "us"). We respect your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application.</p>
 
-    <h2>2. Information We Collect</h2>
-    <ul>
-        <li><strong>Information You Provide Voluntarily:</strong> When you request to publish a landing page, we ask you to provide your <strong>Email Address</strong> and the <strong>customized content of your website</strong> (text, structure, layout configurations).</li>
-        <li><strong>Information Collected Automatically:</strong> To support our free service, this app integrates <strong>Google AdMob</strong>. These third-party services may collect information used to identify your device, such as your Device Advertising ID, IP address, and app usage statistics.</li>
-    </ul>
+        <h2>2. Information We Collect</h2>
+        <ul>
+            <li><strong>Information You Provide Voluntarily:</strong> When you request to publish a landing page, we ask you to provide your <strong>Email Address</strong> and the <strong>customized content of your website</strong> (text, structure, layout configurations, and branding assets).</li>
+            <li><strong>Information Collected Automatically:</strong> To support our free service, this app integrates certified third-party advertising partners (such as Unity Ads). These third-party services may collect device identifiers (such as Device Advertising ID), IP address, network carrier, and app usage statistics in accordance with their independent privacy policies.</li>
+            <li><strong>AI Content Generation:</strong> Optional user prompts entered for AI generation are processed securely via cloud AI endpoints (Google Gemini API) solely to synthesize requested website copy and layout tokens. We do not use your proprietary ideas to train public AI models.</li>
+        </ul>
 
-    <h2>3. How We Use Your Information</h2>
-    <p>We use the collected data solely for the following purposes:</p>
-    <ul>
-        <li>To process and manually review and publish your landing page to our managed hosting environment.</li>
-        <li>To contact you via the provided email address to deliver your completed website link or notify you of any content issues.</li>
-        <li>To serve personalized or non-personalized advertisements via Google AdMob.</li>
-    </ul>
+        <h2>3. How We Use Your Information</h2>
+        <p>We use the collected data solely for the following purposes:</p>
+        <ul>
+            <li>To process, review, and publish your requested landing page to our managed hosting environment.</li>
+            <li>To contact you via the provided email address to deliver your completed live website link or notify you of any content issues.</li>
+            <li>To serve contextual or personalized advertisements in compliance with your consent preferences and Google Play Policies.</li>
+            <li>To maintain, analyze, and optimize application performance and prevent fraudulent activity.</li>
+        </ul>
 
-    <h2>4. Data Security & Third-Party Sharing</h2>
-    <p>Your data is securely transmitted via to our secure moderation environment. We do not sell, trade, or rent your personal information to third parties.</p>
+        <h2>4. Data Privacy Rights & User Choices (GDPR, CCPA & COPPA)</h2>
+        <div class="highlight-box">
+            You retain complete control over your privacy. You can modify or revoke your advertising consents at any time directly within the app by opening <strong>Settings &gt; Ad Privacy &amp; Consent</strong>:
+            <ul>
+                <li><strong>GDPR (Personalized Ads):</strong> Opt in or opt out of interest-based ad tracking.</li>
+                <li><strong>CCPA (Do Not Sell/Share My Data):</strong> Request ad networks not to sell or share your device identifiers.</li>
+                <li><strong>COPPA (Child Protection):</strong> Enforce non-behavioral, contextual-only ads with behavioral profiling disabled.</li>
+            </ul>
+        </div>
 
-    <h2>5. Children's Privacy</h2>
-    <p>Our service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers.</p>
+        <h2>5. Data Security & Third-Party Sharing</h2>
+        <p>Your data is securely transmitted via encrypted HTTPS connections to our secure moderation environment. We do not sell, trade, or rent your personal information to third parties.</p>
 
-    <h2>6. Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy, please contact us via our developer contact channels on the Google Play Store.</p>
+        <h2>6. Children's Privacy</h2>
+        <p>Our service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers.</p>
+
+        <h2>7. Contact Us</h2>
+        <p>If you have any questions or feedback regarding this Privacy Policy, please contact us via our official developer contact channels provided on the Google Play Store.</p>
+    </div>
 
     <div class="divider"></div>
 
     <!-- ==================== VIETNAMESE VERSION ==================== -->
-    <h1>Chính sách bảo mật của Lander Studio</h1>
-    <p><strong>Cập nhật lần cuối:</strong> Tháng 6 năm 2026</p>
+    <div id="vietnamese">
+        <span class="badge">Bản Tiếng Việt</span>
+        <h1>Chính sách bảo mật của Lander Studio</h1>
+        <p><strong>Cập nhật lần cuối:</strong> Tháng 6 năm 2026</p>
 
-    <h2>1. Giới thiệu</h2>
-    <p>Chào mừng bạn đến với Lander Studio. Chúng tôi tôn trọng quyền riêng tư và cam kết bảo vệ dữ liệu cá nhân của bạn. Chính sách bảo mật này giải thích cách chúng tôi thu thập, sử dụng và bảo vệ thông tin của bạn khi bạn sử dụng ứng dụng di động của chúng tôi.</p>
+        <h2>1. Giới thiệu</h2>
+        <p>Chào mừng bạn đến với Lander Studio ("chúng tôi"). Chúng tôi tôn trọng quyền riêng tư và cam kết bảo vệ dữ liệu cá nhân của bạn. Chính sách bảo mật này giải thích cách chúng tôi thu thập, sử dụng và bảo vệ thông tin của bạn khi bạn sử dụng ứng dụng di động của chúng tôi.</p>
 
-    <h2>2. Thông tin chúng tôi thu thập</h2>
-    <ul>
-        <li><strong>Thông tin bạn cung cấp tự nguyện:</strong> Khi bạn yêu cầu xuất bản page, chúng tôi yêu cầu bạn cung cấp <strong>Địa chỉ Email</strong> và <strong>Nội dung tùy chỉnh của trang web</strong> (văn bản, cấu trúc, thiết lập cấu hình giao diện).</li>
-        <li><strong>Thông tin thu thập tự động:</strong> Để duy trì dịch vụ miễn phí, ứng dụng này tích hợp <strong>Google AdMob</strong>. Các dịch vụ bên thứ ba này có thể thu thập thông tin dùng để nhận diện thiết bị của bạn, chẳng hạn như ID quảng cáo của thiết bị (Advertising ID), địa chỉ IP và thống kê hiệu suất sử dụng ứng dụng.</li>
-    </ul>
+        <h2>2. Thông tin chúng tôi thu thập</h2>
+        <ul>
+            <li><strong>Thông tin bạn cung cấp tự nguyện:</strong> Khi bạn yêu cầu xuất bản trang web, chúng tôi yêu cầu bạn cung cấp <strong>Địa chỉ Email</strong> và <strong>Nội dung tùy chỉnh của trang web</strong> (văn bản, cấu trúc, thiết lập cấu hình giao diện, hình ảnh).</li>
+            <li><strong>Thông tin thu thập tự động:</strong> Để duy trì dịch vụ hoàn toàn miễn phí, ứng dụng tích hợp các đối tác quảng cáo bên thứ ba được chứng nhận (như Unity Ads). Các đối tác này có thể thu thập thông tin nhận diện thiết bị (chẳng hạn như Advertising ID), địa chỉ IP, thông tin mạng và thống kê sử dụng ứng dụng theo chính sách bảo mật độc lập của họ.</li>
+            <li><strong>Tính năng sáng tạo nội dung AI:</strong> Các từ khóa hoặc mô tả bạn nhập để trợ lý AI tạo nội dung sẽ được xử lý bảo mật qua API Google Gemini chỉ nhằm mục đích tạo bản thảo văn bản và mã màu cho trang đích. Chúng tôi không sử dụng dữ liệu này để đào tạo mô hình công cộng.</li>
+        </ul>
 
-    <h2>3. Cách chúng tôi sử dụng thông tin</h2>
-    <p>Chúng tôi chỉ sử dụng dữ liệu thu thập được cho các mục đích sau:</p>
-    <ul>
-        <li>Để xử lý, kiểm duyệt và xuất bản thủ công page của bạn lên môi trường lưu trữ do chúng tôi quản lý.</li>
-        <li>Để liên hệ với bạn qua địa chỉ email đã cung cấp nhằm gửi liên kết website đã hoàn thành hoặc thông báo về các vấn đề liên quan đến nội dung.</li>
-        <li>Để hiển thị quảng cáo cá nhân hóa hoặc không cá nhân hóa.</li>
-    </ul>
+        <h2>3. Cách chúng tôi sử dụng thông tin</h2>
+        <p>Chúng tôi chỉ sử dụng dữ liệu thu thập được cho các mục đích minh bạch sau:</p>
+        <ul>
+            <li>Để xử lý, kiểm duyệt và xuất bản trang đích của bạn lên hệ thống máy chủ lưu trữ do chúng tôi quản lý.</li>
+            <li>Để liên hệ với bạn qua email đã cung cấp nhằm gửi liên kết website hoàn chỉnh hoặc thông báo về các vấn đề kỹ thuật liên quan.</li>
+            <li>Để hiển thị quảng cáo phù hợp theo ngữ cảnh hoặc theo tùy chọn đồng ý quyền riêng tư của bạn, tuân thủ tiêu chuẩn Better Ads Standards của Google Play.</li>
+            <li>Để duy trì sự ổn định, tối ưu hóa hiệu suất và ngăn chặn hành vi gian lận.</li>
+        </ul>
 
-    <h2>4. Bảo mật dữ liệu & Chia sẻ bên thứ ba</h2>
-    <p>Dữ liệu của bạn được truyền tải an toàn đến môi trường kiểm duyệt bảo mật của chúng tôi. Chúng tôi không bán, trao đổi hoặc cho thuê thông tin cá nhân của bạn cho bên thứ ba.</p>
+        <h2>4. Quyền riêng tư của bạn (GDPR, CCPA & COPPA)</h2>
+        <div class="highlight-box">
+            Bạn có toàn quyền kiểm soát dữ liệu cá nhân của mình. Bạn có thể thu hồi hoặc điều chỉnh quyền riêng tư quảng cáo bất kỳ lúc nào ngay trong ứng dụng tại <strong>Cài đặt &gt; Quyền Riêng Tư Quảng Cáo</strong>:
+            <ul>
+                <li><strong>GDPR (Quảng cáo cá nhân hóa):</strong> Bật hoặc tắt hiển thị quảng cáo theo sở thích duyệt web.</li>
+                <li><strong>CCPA (Không bán / chia sẻ dữ liệu):</strong> Yêu cầu mạng quảng cáo không chia sẻ định danh thiết bị của bạn cho bên thứ ba.</li>
+                <li><strong>COPPA (Bảo vệ trẻ vị thành niên):</strong> Ép buộc chế độ quảng cáo theo ngữ cảnh, loại bỏ hoàn toàn việc theo dõi hành vi.</li>
+            </ul>
+        </div>
 
-    <h2>5. Quyền riêng tư của trẻ em</h2>
-    <p>Dịch vụ của chúng tôi không hướng tới bất kỳ ai dưới 13 tuổi. Chúng tôi không chủ động thu thập thông tin nhận dạng cá nhân từ trẻ em dưới 13 tuổi. Nếu phát hiện trẻ em dưới 13 tuổi cung cấp thông tin, chúng tôi sẽ tiến hành xóa dữ liệu ngay lập tức khỏi hệ thống.</p>
+        <h2>5. Bảo mật dữ liệu & Chia sẻ bên thứ ba</h2>
+        <p>Dữ liệu của bạn được truyền tải an toàn qua giao thức mã hóa HTTPS đến môi trường kiểm duyệt bảo mật của chúng tôi. Chúng tôi không bán, trao đổi hoặc cho thuê thông tin cá nhân của bạn cho bất kỳ bên thứ ba nào.</p>
 
-    <h2>6. Liên hệ với chúng tôi</h2>
-    <p>Nếu bạn có bất kỳ câu hỏi nào về Chính sách bảo mật này, vui lòng liên hệ với chúng tôi qua các kênh thông tin nhà phát triển được cung cấp trên cửa hàng Google Play Store.</p>
+        <h2>6. Quyền riêng tư của trẻ em</h2>
+        <p>Dịch vụ của chúng tôi không hướng tới bất kỳ ai dưới 13 tuổi. Chúng tôi không chủ động thu thập thông tin nhận dạng cá nhân từ trẻ em dưới 13 tuổi. Nếu phát hiện trẻ em dưới 13 tuổi cung cấp thông tin, chúng tôi sẽ tiến hành xóa dữ liệu ngay lập tức khỏi hệ thống.</p>
+
+        <h2>7. Liên hệ với chúng tôi</h2>
+        <p>Nếu bạn có bất kỳ câu hỏi nào về Chính sách bảo mật này, vui lòng liên hệ với chúng tôi qua các kênh thông tin nhà phát triển được cung cấp trên cửa hàng Google Play Store.</p>
+    </div>
+
+    <footer>
+        &copy; 2026 Lander Studio. All rights reserved.
+    </footer>
+
 </div>
 
 </body>
